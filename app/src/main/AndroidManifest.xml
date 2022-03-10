@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atillaeren.recipeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecipeApp">
+        <activity
+            android:name=".view.home.HomeActivity"
+            android:theme="@style/Theme.RecipeApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.category.CategoryActivity"
+            android:theme="@style/Theme.RecipeApp"
+            android:screenOrientation="portrait"
+            android:label="Category"/>
+        <activity
+            android:name=".view.detail.DetailActivity"
+            android:theme="@style/Theme.RecipeApp.NoActionBar"/>
+    </application>
+
+</manifest>
